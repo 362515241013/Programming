@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2562-08-03 08:50:23 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtLS0Q3VjMwMTIyQVBIOzI1NjItMDgtMDM7MDg6MzI6MzEgUE07MzQ4OA=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtLS0Q3VjMwMTIyQVBIOzI1NjItMDgtMDM7MDg6NTA6MjMgUE07MTszNTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Username" type="Integer" array="False" size=""/>
+            <declare name="Password" type="Integer" array="False" size=""/>
+            <input variable="Username"/>
+            <input variable="password"/>
+            <if expression="Username==36241">
+                <then>
+                    <if expression="password=362515241013">
+                        <then>
+                            <output expression="&quot;1. Matcha 80 THB&quot;" newline="True"/>
+                            <output expression="&quot;2. Vanila 50 THB&quot;" newline="True"/>
+                            <output expression="&quot;3. strawberry 40 THB&quot;" newline="True"/>
+                            <output expression="&quot;4. Chocolate 90 THB&quot;" newline="True"/>
+                            <output expression="&quot;5. Milk 10 THB&quot;" newline="True"/>
+                            <declare name="Ice" type="Integer" array="False" size=""/>
+                            <declare name="Num" type="Integer" array="False" size=""/>
+                            <declare name="Result" type="Integer" array="False" size=""/>
+                            <output expression="&quot;What do you want?&quot;" newline="True"/>
+                            <input variable="Ice"/>
+                            <output expression="&quot;how much do you want&quot;" newline="True"/>
+                            <input variable="Num"/>
+                            <if expression="Ice==1">
+                                <then>
+                                    <assign variable="result" expression="num*80"/>
+                                    <output expression="&quot;You order : 1 Matcha 80 THB&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Ice==2">
+                                        <then>
+                                            <assign variable="result" expression="num*50"/>
+                                            <output expression="&quot;You order : 2 Vanila 50 THB&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Ice==3">
+                                                <then>
+                                                    <assign variable="result" expression="num*40"/>
+                                                    <output expression="&quot;You order : 3 strawberry 40 THB&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="Ice==4">
+                                                        <then>
+                                                            <assign variable="result" expression="num*90"/>
+                                                            <output expression="&quot;You order : 4 Chocolate 90 THB&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="Ice==5">
+                                                                <then>
+                                                                    <assign variable="result" expression="num*10"/>
+                                                                    <output expression="&quot;You order : 5 Milk 10 THB&quot;" newline="True"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Error&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Error&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
